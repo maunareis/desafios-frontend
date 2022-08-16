@@ -10,30 +10,42 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
         body{
             background-color: hsl(212, 45%, 89%);
             font-family: 'Outfit', sans-serif;
+    
         }
 
         div{
-            width: 350px;
+            display: block;
+            width: 340px;
             background-color: hsl(0, 0%, 100%);
             margin: auto;
-            padding: 20px;
+            margin-top: 20vh;
+            padding: 10px;
+            border-radius: 15px;
         }
 
-        figure{
-            position: relative;
-            width: 350px;
-            height: 350px;
+        main{
+            width: 330px;
+            height: 330px;
         }
 
-        figure.qrcode > img{
-           position: absolute;
-           margin: 5px auto;
+        main.qrcode > img{
+            position: absolute;
+            border-radius: 15px;
+            margin-left: 5px;
+            margin-top: 5px;
         }
 
         h1{
+            font-size: 25px;
+            margin: 30px 0px 0px 0px;
             text-align: center;
         }
 
@@ -41,15 +53,16 @@
             font-size: 15px;
             color: hsl(220, 15%, 55%);
             text-align: center;
+            padding: 15px;
         }
 
     </style>
 </head>
 <body>
     <div>
-        <figure class="qrcode">
-            <img src="imagem/image-qr-code.png" alt="Qr code do Frontend mentor" width="300px" height="300px">
-        </figure>
+        <main class="qrcode">
+            <img src="imagem/image-qr-code.png" alt="Qr code do Frontend mentor" width="330px" height="330px">
+        </main>
         
         <h1>Improve your front-end skills by building projects</h1>
         <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
